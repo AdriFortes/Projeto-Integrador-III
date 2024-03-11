@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "Aluno")
-public class Aluno {
+public class Aluno extends PessoaFisica {
 
     @Id
     private Boolean statusValidacao;

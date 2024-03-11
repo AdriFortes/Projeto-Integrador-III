@@ -15,6 +15,10 @@ public class Disciplina {
     private String codigo;
     private String professor;
 
+    public Disciplina(String turma) {
+        this.nome = turma;
+    }
+
     public String getNome() {
         return nome;
     }

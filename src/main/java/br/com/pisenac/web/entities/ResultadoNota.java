@@ -12,11 +12,17 @@ public class ResultadoNota {
     private Aluno aluno;
     private Double nota;
 
+    public ResultadoNota(Disciplina disciplina, Aluno aluno, double nota) {
+        this.disciplina = disciplina;
+        this.aluno = aluno;
+        this.nota = nota;
+    }
+
     public Disciplina getdisciplina() {
         return disciplina;
     }
 
-    public void setdisiplina(Disciplina disciplina) {
+    public void setDisciplina(Disciplina disciplina) {
         this.disciplina = disciplina;
     }
 

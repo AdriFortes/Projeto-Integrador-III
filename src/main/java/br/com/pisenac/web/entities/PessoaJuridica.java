@@ -1,6 +1,5 @@
 package br.com.pisenac.web.entities;
 
-import br.com.pisenac.web.enums.CargoEnum;
 import jakarta.persistence.*;
 import org.springframework.data.annotation.Id;
 
@@ -16,9 +15,7 @@ public class PessoaJuridica implements Serializable {
     @Column(nullable = false)
     private String pessoaJusNome;
 
-    @ElementCollection(targetClass = CargoEnum.class, fetch = FetchType.EAGER)
-    @CollectionTable(name = "pessoa_Fornecedor", joinColumns = @JoinColumn(name = "pessoaJus_id"))
-    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private String Fornecedor;
     
     public long getCNPJ() {

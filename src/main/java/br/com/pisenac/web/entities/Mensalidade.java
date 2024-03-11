@@ -11,7 +11,7 @@ import java.util.Date;
 public class Mensalidade {
     @Id
     private Aluno aluno;
-    private double valor;
+    private double valor = 500.00;
     private boolean statusPagamento;
     private Date dataVencimento;
 

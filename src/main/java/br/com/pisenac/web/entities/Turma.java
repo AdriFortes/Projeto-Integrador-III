@@ -14,6 +14,10 @@ public class Turma {
     private List<Aluno> alunosMatriculados;
     private Disciplina disciplina;
 
+    public Turma(String codigoTurma) {
+        this.codigo = codigoTurma;
+    }
+
     public String getCodigo() {
         return codigo;
     }

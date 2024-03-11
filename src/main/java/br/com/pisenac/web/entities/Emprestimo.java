@@ -16,6 +16,13 @@ public class Emprestimo {
     private Date dataDevolucao;
     private Date dataEmprestimo;
 
+    public Emprestimo(Aluno nome, Livro livro, Date dataEmprestimo, Date dataDevolucao) {
+        this.aluno = nome;
+        this.livro = livro;
+        this.dataEmprestimo = dataEmprestimo;
+        this.dataDevolucao = dataDevolucao;
+    }
+
     public Aluno getAluno() {
         return aluno;
     }
