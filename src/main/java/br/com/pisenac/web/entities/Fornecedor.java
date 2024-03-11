@@ -8,11 +8,10 @@ import java.util.List;
 
 @Entity
 @Table(name = "Fornecedor")
-
-public class Fornecedor extends PessoaFisica{
+public class Fornecedor extends PessoaJuridica {
 
     @Id
-    private Boolean statusValidacao;
+    private int statusValidacao;
     private TipoFornecedor tipoFornecedor;
     private List<Contrato> contratos;
 
@@ -30,5 +29,14 @@ public class Fornecedor extends PessoaFisica{
 
     public void setcontratos(List<Contrato> contratos) {
         this.contratos = contratos;
+    }
+
+
+    public int getStatusValidacao() {
+        return statusValidacao;
+    }
+
+    public void setStatusValidacao(int statusValidacao) {
+        this.statusValidacao = statusValidacao;
     }
 }

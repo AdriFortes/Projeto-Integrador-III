@@ -15,7 +15,13 @@ public class Contrato extends Fornecedor {
     @Id
     private String Descricao;
     private Double Valor;
-    private Fornecedor fornecedor;
+    private Fornecedor Fornecedor;
+
+    public Contrato(String descricao, Double valor, br.com.pisenac.web.entities.Fornecedor fornecedor) {
+        this.Descricao = descricao;
+        this.Valor = valor;
+        this.Fornecedor = fornecedor;
+    }
 
     public String getDescricao() {
         return Descricao;
@@ -34,10 +40,10 @@ public class Contrato extends Fornecedor {
     }
 
     public Fornecedor getfornecedor() {
-        return fornecedor;
+        return Fornecedor;
     }
 
     public void setfornecedor(Fornecedor Fornecedor) {
-        this.fornecedor= Fornecedor;
+        this.Fornecedor= Fornecedor;
     }
 }
