@@ -15,6 +15,9 @@ public class EmprestimoService {
     EmprestimoRepository emprestimoRepository;
     Emprestimo emprestimo;
 
+    public Emprestimo getEmprestimoById(String id) {
+        return emprestimoRepository.findById(id).orElse(null);
+    }
     public String realizarEmprestimo(Aluno aluno, Livro livro, Date dataEmprestimo, Date dataDevolucao) {
         new Emprestimo(aluno, livro, dataEmprestimo, dataDevolucao);
 
