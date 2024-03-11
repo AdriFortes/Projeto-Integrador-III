@@ -18,5 +18,8 @@ public class HorarioService {
         return horarioRepository.save(horario);
     }
 
+    public void deleteHorario(String id) {
+        horarioRepository.deleteById(id);
+    }
 
 }
