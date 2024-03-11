@@ -15,4 +15,36 @@ public class Emprestimo {
     private Livro livro;
     private Date dataDevolucao;
     private Date dataEmprestimo;
+
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    public Livro getlivro() {
+        return livro;
+    }
+    
+    public void setlivro(Livro livro) {
+        this.livro = livro;
+    }
+
+    public Date getdataDevolucao() {
+        return dataDevolucao;
+    }
+    
+    public void setdatadevolucao(Date datadevolucao) {
+        this.dataDevolucao = datadevolucao;
+    }
+
+    public Date getdataEmprestimo() {
+        return dataEmprestimo;
+    }
+    
+    public void setdataEmprestimo(Date dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
+    }
 }

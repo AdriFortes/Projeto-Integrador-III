@@ -11,4 +11,31 @@ public class ResultadoNota {
     private Disciplina disciplina;
     private Aluno aluno;
     private Double nota;
+
+    public Disciplina getdisciplina() {
+        return disciplina;
+    }
+
+    public void setdisiplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
+    }
+
+    public Aluno getAluno() {
+        return aluno;
+    }
+
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    public Double getnota() {
+        return nota;
+    }
+
+    public void setnota(Double nota) {
+        this.nota = nota;
+    }
+
+
+
 }

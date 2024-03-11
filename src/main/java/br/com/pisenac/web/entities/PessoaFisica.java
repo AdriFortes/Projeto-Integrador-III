@@ -21,7 +21,7 @@ public class PessoaFisica implements Serializable {
     @Enumerated(EnumType.STRING)
     private String Cargo;
 
-
+    
     public long getCPF() {
         return CPF;
     }
