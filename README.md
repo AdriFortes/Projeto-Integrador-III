@@ -88,7 +88,14 @@ Os apêndices apresentam diagramas de classe detalhados para cada classe princip
 # Agradecimentos
 
 Agradecemos a todos que colaboraram para o desenvolvimento deste projeto.
-Talvez colocar o nome detodos os membros do grupo?
+ADRIANA FORTES RIBEIRO
+BRUNO DA SILVA GABRIEL
+BRUNO GOMES ROCHA
+DANIEL MARCOS FREIRE DE MENEZES E SANTOS
+FELIPE ALENCAR DE QUEIROGA
+GUILHERME FERNANDES GARCIA
+GUILHERME LINS SANTOS
+MAIANA DA FONSECA MAIA DE LIMA
 
 # Contato
 
