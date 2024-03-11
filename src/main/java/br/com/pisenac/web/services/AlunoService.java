@@ -2,14 +2,13 @@ package br.com.pisenac.web.services;
 
 import br.com.pisenac.web.entities.*;
 import br.com.pisenac.web.repositories.AlunoRepository;
-import br.com.pisenac.web.repositories.ResultadoNotaRepository;
-import jakarta.persistence.Embeddable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AlunoService {
@@ -90,9 +89,8 @@ public class AlunoService {
         return emprestimoRealizado;
     }
 
-    /**
-    public  List<ResultadoNota> consultarNotas(String idDisciplina) {
-        // TODO
+    public Optional<Aluno> consultarNotas(String idDisciplina) {
+       return alunoRepository.findById(idDisciplina);
     }
-     **/
+
 }
